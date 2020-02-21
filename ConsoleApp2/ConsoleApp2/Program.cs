@@ -6,10 +6,10 @@ namespace ConsoleApp2
     {
         static void Main(string[] args)
         {
+            int m = int.Parse(Console.ReadLine());
             int n = int.Parse(Console.ReadLine());
-            int p = int.Parse(Console.ReadLine());
-                Console.WriteLine((n >> p & 1) == 1);
-            
+            Console.WriteLine(Math.Max(m, n));
+
         }
     }
 }

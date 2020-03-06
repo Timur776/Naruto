@@ -9,43 +9,28 @@ namespace ConsoleApp2
             int a = int.Parse(Console.ReadLine());
             int b = int.Parse(Console.ReadLine());
             int c = int.Parse(Console.ReadLine());
-            
-                if (a <= b && b <= c) 
+            if (a > b)
+            {
+                if (a > c)
                 {
-                Console.WriteLine(c);
-                Console.WriteLine(b);
-                Console.WriteLine(a);
+                    Console.WriteLine(a);
                 }
-                if (a <= c && c <= b)
+                else
                 {
-                Console.WriteLine(b);
-                Console.WriteLine(c);
-                Console.WriteLine(a);
+                    Console.WriteLine(c);
                 }
-                if (b <= a && a <= c)
+            }
+            else
+            {
+                if (b > c)
                 {
-                Console.WriteLine(c);
-                Console.WriteLine(a);
-                Console.WriteLine(b);
+                    Console.WriteLine(b);
                 }
-                if (b <= c && c <= a)
-                { 
-                Console.WriteLine(c);
-                Console.WriteLine(c);
-                Console.WriteLine(b);
-                }
-                if (c <= a && a <= b)
+                else
                 {
-                Console.WriteLine(b);
-                Console.WriteLine(a);
-                Console.WriteLine(c);
+                    Console.WriteLine(c);
                 }
-                if (c <= b && b <= a)
-                {
-                Console.WriteLine(a);
-                Console.WriteLine(b);
-                Console.WriteLine(c);
-                }
+            }
         }
     }
 }

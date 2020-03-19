@@ -6,31 +6,26 @@ namespace ConsoleApp2
     {
         static void Main(string[] args)
         {
-            int a = int.Parse(Console.ReadLine());
-            int b = int.Parse(Console.ReadLine());
-            int c = int.Parse(Console.ReadLine());
-            if (a > b)
+            char n =char.Parse(Console.ReadLine());
+            switch (n)
             {
-                if (a > c)
-                {
-                    Console.WriteLine(a);
-                }
-                else
-                {
-                    Console.WriteLine(c);
-                }
+                case 'i':
+                    int i = int.Parse(Console.ReadLine());
+                    Console.WriteLine(i + 1);
+                    break;
+
+                case 'd':
+                    double d = double.Parse(Console.ReadLine());
+                    Console.WriteLine(d + 1);
+                    break;
+
+                case 's':
+                    string s = Console.ReadLine();
+                    Console.WriteLine(s + '*');
+                    break;
+
             }
-            else
-            {
-                if (b > c)
-                {
-                    Console.WriteLine(b);
-                }
-                else
-                {
-                    Console.WriteLine(c);
-                }
-            }
+
         }
     }
 }

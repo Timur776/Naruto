@@ -6,12 +6,17 @@ namespace ConsoleApp2
     {
         static void Main(string[] args)
         {
-            int n = int.Parse(Console.ReadLine());
-                   for (int i = 0; i <= n; i++)
-            if (i % (3 * 7) != 0)
+            int N = int.Parse(Console.ReadLine());
+            int K = int.Parse(Console.ReadLine());
+            
+            {
+                double res = 1;
+                for (int i = K + 1; i <= N; i++)
                 {
-                    Console.WriteLine(i);
+                    res *= i;
                 }
+                Console.WriteLine(res);
+            }
             
         }
     }

@@ -6,9 +6,9 @@ namespace ConsoleApp2
     {
         static void Main(string[] args)
         {
-            double n = 20;
+            double n = 300;
             string Celsium, Farengheit;
-            for (int i = -20; i <= n; i+=2)
+            for (int i = 300; i >= 0; i-=5)
             {
                 Console.WriteLine("Celsium "+(i)+"= Farengheit "+(i * 1.8 + 32));
             }

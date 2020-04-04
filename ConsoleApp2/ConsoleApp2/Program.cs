@@ -6,12 +6,17 @@ namespace ConsoleApp2
     {
         static void Main(string[] args)
         {
-            double n = 300;
-            string Celsium, Farengheit;
-            for (int i = 300; i >= 0; i-=5)
+            int n = int.Parse(Console.ReadLine());
+            int x = int.Parse(Console.ReadLine());
+            double Y = 1;
+            double S = 1;
+            for (int i = 1; i <= n; i++)
             {
-                Console.WriteLine("Celsium "+(i)+"= Farengheit "+(i * 1.8 + 32));
+                Y *= ((double)i)/x;
+                S += Y;
             }
+            Console.WriteLine(S);
         }
+
     }
 }

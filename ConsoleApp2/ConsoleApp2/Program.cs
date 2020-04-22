@@ -6,14 +6,11 @@ namespace ConsoleApp2
     {
         static void Main(string[] args)
         {
-            int n = int.Parse(Console.ReadLine());
-            int x = int.Parse(Console.ReadLine());
-            double Y = 1;
-            double S = 1;
-            for (int i = 1; i <= n; i++)
+            ulong n = ulong.Parse(Console.ReadLine());
+            string S = string.Empty;
+            for (ulong i=n;i>0;i/=2) 
             {
-                Y *= ((double)i)/x;
-                S += Y;
+                S = (i%2) + S;
             }
             Console.WriteLine(S);
         }

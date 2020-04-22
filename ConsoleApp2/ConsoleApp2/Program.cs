@@ -6,13 +6,13 @@ namespace ConsoleApp2
     {
         static void Main(string[] args)
         {
-            ulong n = ulong.Parse(Console.ReadLine());
-            string S = string.Empty;
-            for (ulong i=n;i>0;i/=2) 
-            {
-                S = (i%2) + S;
+            string S =Console.ReadLine();
+            int n = 0;
+            for(int i = 0; i < S.Length; i++)
+            { 
+             n+= ((int)  Math.Pow(2, i))*(S[S.Length - 1-i]-'0');
             }
-            Console.WriteLine(S);
+            Console.WriteLine(n);
         }
 
     }
